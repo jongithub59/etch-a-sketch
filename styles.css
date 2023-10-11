@@ -9,18 +9,24 @@ body {
     font-family: retrocool;
 }
 
+h1 {
+    font-size: 40px;
+}
+
 .square {
     margin: 0;
     padding: 0;
     height: 23px;
     width: 23px;
-    border: solid black 1px;
+    flex: 0 0 auto;
+    aspect-ratio: 1 / 1;
+    border: solid black .5px;
 }
 
 /* will be used to make each grid element grey by replacing its class 
 eit this one */
 .greySquare {
-    border: solid black 1px;
+    border: solid black .5px;
     margin: 0;
     padding: 0;
     height: 23px;
@@ -29,6 +35,7 @@ eit this one */
 }
 #container {
     margin: auto;
+    align-content: center; /*gets rid of weird gaps between grid elements */
     padding: 0;
     display: flex;
     flex-wrap: wrap;

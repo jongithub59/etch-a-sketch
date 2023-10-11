@@ -4,7 +4,7 @@ function createGrid() {
         const square = document.createElement('div');
         square.classList.add('square');
         square.addEventListener('mouseover', (e) => {
-            // color chage is done by changing it to a class with a grey style 
+            // color change is done by changing it to a class with a grey style 
             e.target.classList.remove('square');
             e.target.classList.add('greySquare');
         });
