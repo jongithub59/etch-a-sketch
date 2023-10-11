@@ -13,5 +13,14 @@ function createGrid() {
 }
 
 const container = document.getElementById('container');
+var gridSize = document.getElementById('grid-size');
+var slider = document.getElementById('slider');
+gridSize.innerHTML = slider.value; //makes the span with id gridSize display the slider's currnet value
+
+slider.oninput = function() {
+    console.log(this);
+    gridSize.innerHTML = this.value; //updates the span with the current slider value using this
+}
+
 
 createGrid();

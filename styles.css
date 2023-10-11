@@ -41,5 +41,22 @@ eit this one */
     flex-wrap: wrap;
     width: 400px;
     height: 400px;
+}
 
+#size-bar {
+    margin-top: 20px;
+}
+
+#slider {
+    width: 30%;
+    outline: none; 
+    background-color: grey;
+}
+
+#slider::-webkit-slider-thumb {
+    /* -webkit-appearance: none;
+    appearance: none; */
+    height: 35px;
+    width: 35px;
+    background: red;
 }
