@@ -17,7 +17,16 @@ body {
     border: solid black 1px;
 }
 
-
+/* will be used to make each grid element grey by replacing its class 
+eit this one */
+.greySquare {
+    border: solid black 1px;
+    margin: 0;
+    padding: 0;
+    height: 23px;
+    width: 23px;
+    background-color: grey;
+}
 #container {
     margin: auto;
     padding: 0;
