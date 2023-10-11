@@ -1,18 +1,29 @@
+@font-face {
+    font-family: retrocool;
+    src: url(RetroCool-Regular.woff);
+}
+
 body {
     text-align: center;
     background-color:beige;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-family: retrocool;
 }
 
 .square {
-    height: 5vw;
-    width: 5vw;
+    margin: 0;
+    padding: 0;
+    height: 23px;
+    width: 23px;
     border: solid black 1px;
 }
 
+
 #container {
+    margin: auto;
+    padding: 0;
     display: flex;
-    justify-content: center;
-    height: 60vw;
-    height: 60vw;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+
 }
