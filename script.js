@@ -1,4 +1,4 @@
-let size = 16; //default size for grid 16x16 
+let size = 16;
 const container = document.getElementById('container');
 const eraseButton = document.getElementById('erase-button');
 const normalButton = document.getElementById('normal-button');
@@ -9,12 +9,13 @@ largeButton.addEventListener('click', largeSize);
 
 function createGrid(size) {
     container.innerHTML = "";
-    for (let i = 0; i < size * size; i++) { // size is multiplied to get the actual amount os squares to fil the grid
+    const gridWidth = parseInt(getComputedStyle(container).width); //gets width of the grid from css, may make option for increasing grid sizien in the future
+    const currentSize = gridWidth / size; //formula for calculating grid element size to fit grid
+    for (let i = 0; i < size * size; i++) {
         const square = document.createElement('div');
+        square.style.width = `${currentSize}px`; //grid element size is added
+        square.style.height = `${currentSize}px`;
         square.classList.add('square');
-        if (size == 32) {
-            square.style.width = square.style.height = `12.5px`; //makes grid elements smaller if more squares are made
-        }
         square.addEventListener('mouseover', (e) => {
             // color change is done by changing it to a class with a grey style 
             e.target.classList.remove('square');
@@ -23,7 +24,7 @@ function createGrid(size) {
         container.appendChild(square);
     }
 }
-   
+        
 function clearGrid() {
     container.innerHTML = "";
     createGrid(size);
