@@ -4,41 +4,85 @@
 }
 
 body {
+    height: 90vh;
     text-align: center;
-    background-color:beige;
+    background-color:rgb(192, 183, 152);
     font-family: retrocool;
+    padding: 0;
+    justify-content: center;
+
+}
+
+.container {
+    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.71);
+    border-radius: 10px;
+    background-color: rgb(221, 29, 67);
+}
+
+body, .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title {
+    width: 700px;
+    height: 70px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(221, 29, 67);
+    border-radius: 10px 10px 0 0;
 }
 
 h1 {
-    display:flex;
-    justify-content: center;
     font-size: 40px;
+    color: rgb(250, 248, 107);
 }
 
 .square {
     box-sizing: border-box;     /* makes box sizing consistent and take up the proper space */
-    border: solid black .5px;
+    
 }
 
 /* will be used to make each grid element grey by replacing its class 
 eit this one */
 .greySquare {
     box-sizing: border-box;
-    border: solid black .5px;
     background-color: grey;
 }
-#container {
-    margin: auto;
-    padding: 0;
+
+
+#inner-container {
+    /* border: solid rgb(221, 29, 67);
+    border-width: 10px 50px 0; */
+    background-color: aliceblue;
     display: flex;
     flex: 1 1 0;
     flex-wrap: wrap;
     width: 600px;
     height: 600px;
+    box-shadow: inset 0px 0px 5px 3px grey;
+    border-radius: 10px;
 }
 
 #button-bar {
-    justify-content: center;
+    width: 680px;
+    height: 90px;
+    align-items: center;
+    background-color: rgb(221, 29, 67);
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-between;
     display: flex;
-    margin-top: 20px;
+    border-radius: 0 0 10px 10px;
+}
+
+.circle {
+    box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.71);
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    background-color: aliceblue;
+    margin: 2px;
 }

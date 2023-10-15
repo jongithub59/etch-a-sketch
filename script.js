@@ -1,5 +1,5 @@
 let size = 16;
-const container = document.getElementById('container');
+const container = document.getElementById('inner-container');
 const eraseButton = document.getElementById('erase-button');
 const normalButton = document.getElementById('normal-button');
 const largeButton = document.getElementById('large-button');
@@ -15,6 +15,16 @@ function createGrid(size) {
         const square = document.createElement('div');
         square.style.width = `${currentSize}px`; //grid element size is added
         square.style.height = `${currentSize}px`;
+        // adds curve only to squares at corners
+        if (i == 0) {
+            square.style.borderTopLeftRadius = "10px";
+        } else if (i == size - 1) {
+            square.style.borderTopRightRadius = "10px";
+        } else if (i == size * size - size) {
+            square.style.borderBottomLeftRadius = "10px";
+        } else if (i == size * size - 1) {
+            square.style.borderBottomRightRadius = "10px";
+        }
         square.classList.add('square');
         square.addEventListener('mouseover', (e) => {
             // color change is done by changing it to a class with a grey style 
