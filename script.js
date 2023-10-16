@@ -4,8 +4,6 @@ const eraseButton = document.getElementById('erase-button');
 const normalButton = document.getElementById('normal-button');
 const largeButton = document.getElementById('large-button');
 eraseButton.addEventListener('click', clearGrid);
-normalButton.addEventListener('click', normalSize);
-largeButton.addEventListener('click', largeSize);
 
 function createGrid(size) {
     container.innerHTML = "";
@@ -36,17 +34,22 @@ function createGrid(size) {
 }
         
 function clearGrid() {
-    container.innerHTML = "";
-    createGrid(size);
+    const squares = document.querySelectorAll('#inner-container > div');
+    squares.forEach((item) => {
+        const square = item;
+        square.classList.remove('greySquare');
+    });
+
 }
 
-function normalSize() {
-    let size = 16;
-    clearGrid(size);
-}
 
-function largeSize() {
-    let size = 32;
+var gridSize = document.getElementById('grid-size');
+var slider = document.getElementById('slider');
+gridSize.innerHTML = slider.value + 'x' + slider.value; //makes the span with id gridSize display the slider's currnet value
+
+slider.oninput = function() {
+    gridSize.innerHTML = this.value; //updates the span with the current slider value using this
+    const size = this.value;
     createGrid(size);
 }
 
