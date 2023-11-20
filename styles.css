@@ -3,6 +3,10 @@
     src: url(RetroCool-Regular.woff);
 }
 
+:root {
+    --color-red: rgb(214, 0, 43);
+}
+
 body {
     height: 90vh;
     text-align: center;
@@ -14,9 +18,10 @@ body {
 }
 
 .container {
-    box-shadow: 0px 0px 5px 3px rgba(0,0,0,0.71);
+    box-shadow: 1px 1px 20px 3px rgba(0,0,0,0.91);
     border-radius: 10px;
-    background-color: rgb(214, 0, 43);
+    background-color: var(--color-red);
+    width: 820px;
 }
 
 body, .container {
@@ -27,11 +32,11 @@ body, .container {
 
 .title {
     width: 700px;
-    height: 70px;
+    height: 100px;
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: rgb(214, 0, 43);
+    background-color: var(--color-red);
     border-radius: 10px 10px 0 0;
 }
 
@@ -42,7 +47,6 @@ h1 {
 
 .square {
     box-sizing: border-box;     /* makes box sizing consistent and take up the proper space */
-    
 }
 
 /* will be used to make each grid element grey by replacing its class 
@@ -54,8 +58,6 @@ eit this one */
 
 
 #inner-container {
-    /* border: solid rgb(221, 29, 67);
-    border-width: 10px 50px 0; */
     background-color: aliceblue;
     display: flex;
     flex: 1 1 0;
@@ -67,49 +69,45 @@ eit this one */
 }
 
 #button-bar {
-    width: 680px;
-    height: 90px;
+    width: 800px;
+    height: 110px;
     align-items: center;
-    background-color: rgb(214, 0, 43);
+    background-color: var(--color-red);
     margin-left: auto;
     margin-right: auto;
     justify-content: space-between;
     display: flex;
     border-radius: 0 0 10px 10px;
+    margin: 5px;
 }
+
+
+p {
+    margin-bottom: 0px;
+    font-size: 18px;
+} 
 
 .circle {
     box-shadow: 0px 0px 3px 3px rgba(0,0,0,0.71);
-    height: 75px;
-    width: 75px;
+    height: 90px;
+    width: 90px;
     border-radius: 50%;
     background-color: aliceblue;
     margin: 2px;
 }
 
 button {
-    width: 90px;
-    height: 50px;
+    width: 100px;
+    height: 60px;
     box-shadow: 2px 2px 3px 2px rgba(0,0,0,0.71);
     font-family: retrocool;
     font-size: 18px;
-    /* font-weight: bold; */
     padding: 0;
     border-radius: 10px;
+    cursor: pointer;
 }
 
-#normal-button, #large-button {
-    font-size: 17px;
-}
-
-button:active {
-    transform: translate(1px, 2px);
-}
-
-button:hover {
-    background-color: rgb(255 237 102);
-}
-
-footer {
-    padding: 10px;
+footer > p {
+    margin: 30px;
+    font-size: 23px;
 }
