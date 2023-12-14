@@ -2,9 +2,9 @@
 
 ## The Odin Project
 
-An interactive etch-a-sketch that lets your draw whatever you want! From the Odin Prject [curriculum](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
+An interactive etch-a-sketch that lets you draw whatever you want! From the Odin Prject [curriculum](https://www.theodinproject.com/lessons/foundations-etch-a-sketch).
 
-Live preview [here](https://www.theodinproject.com/lessons/foundations-etch-a-sketch)
+Live preview [here](https://www.theodinproject.com/lessons/foundations-etch-a-sketch).
 
 ## Features
 
@@ -15,7 +15,7 @@ Live preview [here](https://www.theodinproject.com/lessons/foundations-etch-a-sk
 
 ## Reflection
 
-* Used flexbox to create the inner grid, a very difficult but learning task
+* Used flexbox to create the inner grid, a very difficult but teaching task
 * Learned to use two classes to change the color of squares, and toggle between them with the classList property
 * Learned about box shadows to make a more realistic and softer looking design
 * Learned what [template literals](https://stackoverflow.com/questions/35835362/what-does-dollar-sign-and-curly-braces-mean-in-a-string-in-javascript) are and used them in my script
