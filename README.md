@@ -4,7 +4,7 @@
 
 An interactive etch-a-sketch that lets you draw whatever you want! From the Odin Prject [curriculum](https://www.theodinproject.com/lessons/foundations-etch-a-sketch).
 
-Live preview [here](https://www.theodinproject.com/lessons/foundations-etch-a-sketch).
+Live preview [here](https://jongithub59.github.io/etch-a-sketch/).
 
 ## Features
 
